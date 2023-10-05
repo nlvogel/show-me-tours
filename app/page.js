@@ -48,8 +48,6 @@ export default async function Page() {
       <Plan
 
       />
-      <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`contact`} additionalClass={`rounded`}>PLAN
-        A TRIP</PrimaryButton></div>
       <ContactForm formTitle={`Book a Tour`}/>
     </div>
   )
