@@ -1,0 +1,57 @@
+{
+  "client": {
+    "name": "Show Me Tours",
+    "email": "daniel@showmetours.biz",
+    "phone": "+11234567890",
+    "phoneFmt": "(123) 456-7890",
+    "address": {
+      "lineOne": "1234 An Address Lane",
+      "lineTwo": "",
+      "city": "Somewhere",
+      "state": "KS",
+      "zip": "12345",
+      "mapsLink": ""
+    },
+    "trackingCode": "XXXXXXX",
+    "website": "showmetours.biz",
+    "logo": "/assets/images/logo.svg"
+  },
+  "plan": [
+    {
+      "title": "Book a Tour",
+      "description": "This is placeholder text that will get replaced as soon as designs are approved. This is meant to be an easy, 3-step process of your business.",
+      "imageUrl": "/assets/images/plan/1.svg",
+      "imageDescription": "Step 1 image"
+    },
+    {
+      "title": "Customize Your Tour",
+      "description": "This is placeholder text that will get replaced as soon as designs are approved. This is meant to be an easy, 3-step process of your business.",
+      "imageUrl": "/assets/images/plan/2.svg",
+      "imageDescription": "Step 2 image"
+    },
+    {
+      "title": "Enjoy Your Tour",
+      "description": "This is placeholder text that will get replaced as soon as designs are approved. This is meant to be an easy, 3-step process of your business.",
+      "imageUrl": "/assets/images/plan/3.svg",
+      "imageDescription": "Step 3 image"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "John S.",
+      "review": "Lorbn vghh vcbem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices."
+    },
+    {
+      "name": "Jill F.",
+      "review": "Bibendum est ultricies integer quis auctor elit. Sagittis purus sit amet volutpat consequat mauris nunc."
+    },
+    {
+      "name": "Jack B.",
+      "review": "Vel turpis nunc eget lorem dolor sed viverra. Accumsan tortor posuere ac ut consequat. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit."
+    },
+    {
+      "name": "Kelly R.",
+      "review": "Vel turpis nunc eget lorem dolor sed viverra. Accumsan tortor posuere ac ut consequat. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit."
+    }
+  ]
+}

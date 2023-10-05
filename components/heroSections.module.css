@@ -1,0 +1,39 @@
+.heroText {
+    width: 90%;
+    text-align: center;
+}
+
+.heroHeader {
+    font-size: 3rem!important;
+}
+
+.heroSection {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.heroContent {
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+@media screen and (min-width: 850px){
+    .heroText {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .heroText {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .heroText {
+        width: 45%;
+    }
+}
