@@ -1,9 +1,6 @@
 'use client'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from "next/image";
-import {tr} from "date-fns/locale";
-import {Suspense} from "react";
 
 
 export default function RenderCarousel({images}) {
