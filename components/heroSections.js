@@ -5,7 +5,7 @@ export function HeroSectionOne(props) {
     return <div>
         <div>
             <div className={styles.heroSection} style={{
-                background: `url(${props.image.src}) rgba(0,0,0,0.75) no-repeat ${props.backgroundPosition}`,
+                background: `url(${props.image.src}) rgba(0,0,0,0.5) no-repeat ${props.backgroundPosition}`,
                 backgroundBlendMode: "overlay",
                 backgroundSize: `${props.backgroundSize}`,
                 height: `${props.viewHeight}px`,
