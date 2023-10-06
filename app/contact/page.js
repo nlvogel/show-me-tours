@@ -13,7 +13,7 @@ export default function ContactPage() {
                     firstHeader={`Book a Tour with ${info.client.name}`}
                     secondHeader="Since our tours are completely customized, we need a little more information from you than just the dates you want to travel. Please take some time to fill out the form below so we can set up a time to talk about what your perfect vacation looks like!"
                     image={bg}
-                    viewHeight={350}
+                    viewHeight={600}
                     backgroundPosition="center"
                     backgroundSize={`cover`}
                     includeButtons={true}

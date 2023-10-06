@@ -8,7 +8,8 @@ export function HeroSectionOne(props) {
                 background: `url(${props.image.src}) rgba(0,0,0,0.5) no-repeat ${props.backgroundPosition}`,
                 backgroundBlendMode: "overlay",
                 backgroundSize: `${props.backgroundSize}`,
-                height: `${props.viewHeight}px`,
+                // height: `${props.viewHeight}px`,
+                minHeight: `${props.viewHeight}px`,
             }}>
                 <div className={`${styles.heroText} max-width`}>
                     <h1 className={styles.heroHeader}>{props.firstHeader}</h1>
