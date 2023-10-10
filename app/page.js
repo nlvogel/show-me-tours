@@ -11,6 +11,41 @@ import {Suspense} from "react";
 import Loading from "./loading";
 import {images} from '../utils/getImages'
 
+const meta = {
+  title: 'Custom Tours of New York City, Washington D.C., and Boston',
+  description: 'See the city the way you want to see it with a custom tour from Show Me Tours.',
+  url: `https://${info.client.website}/`,
+}
+
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: meta.url,
+    siteName: 'Show Me Tours',
+    images: '../../public/assets/images/home.jpeg',
+    locale: 'en_US',
+    type: 'website',
+  },
+  canonical: meta.url,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    }
+  },
+  verification: {
+    google: info.client.verificationCode,
+  },
+  metadataBase: new URL(meta.url)
+}
+
 export default async function Page() {
   return (
     <div>

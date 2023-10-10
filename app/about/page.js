@@ -5,6 +5,41 @@ import {TextField} from "components/explanation"
 import Image from "next/image";
 import AboutSection from "components/aboutSection";
 
+const meta = {
+  title: 'About Show Me Tours',
+  description: 'Learn more about the people behind Show Me Tours.',
+  url: `https://${info.client.website}/about`,
+}
+
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: meta.url,
+    siteName: 'Show Me Tours',
+    images: '../../public/assets/images/about.jpeg',
+    locale: 'en_US',
+    type: 'website',
+  },
+  canonical: meta.url,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    }
+  },
+  verification: {
+    google: info.client.verificationCode,
+  },
+  metadataBase: new URL(meta.url)
+}
+
 export default function AboutPage() {
   return (
     <div>

@@ -5,6 +5,41 @@ import {ContactForm} from "components/form";
 import Address from "components/address";
 import {Reviews} from "../../components/reviews";
 
+const meta = {
+  title: 'Contact Show Me Tours',
+  description: 'Contact Show Me Tours to start planning your perfect vacation.',
+  url: `https://${info.client.website}/contact`,
+}
+
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: meta.url,
+    siteName: 'Show Me Tours',
+    images: '../../public/assets/images/book-a-trip.jpeg',
+    locale: 'en_US',
+    type: 'website',
+  },
+  canonical: meta.url,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    }
+  },
+  verification: {
+    google: info.client.verificationCode,
+  },
+  metadataBase: new URL(meta.url)
+}
+
 export default function ContactPage() {
     return (
         <>
