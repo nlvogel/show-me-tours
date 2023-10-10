@@ -4,7 +4,7 @@ export function ContactForm(props) {
     return (
         <div className={`form-container ${props.contactPage ? 'contact-form-container' : 'max-width'} ${props.className}`}>
             <h2>{props.formTitle}</h2>
-            <form name={`form`} data-netlify={true} method={`POST`}>
+            <form name={`form`} data-netlify={true} method={`POST`} action={`/`}>
                 <input aria-label="first name" name="fName" placeholder="First Name*" type="text" tabIndex="1" required/>
                 <input aria-label="last name" name="lName" placeholder="Last Name*" type="text" tabIndex="2" required/>
                 <input aria-label="size of group" name="groupSize" placeholder="How many people are in your group?*" type="number" tabIndex="3" required/>
