@@ -6,8 +6,8 @@ export function ContactForm(props) {
       <h2>{props.formTitle}</h2>
       <form name={`contact-form`} data-netlify={true} method={`POST`}>
         <input type="hidden" name="form-name" value="contact-form"/>
-        <input aria-label="first name" name="fName" placeholder="First Name*" type="text" tabIndex="1" required/>
-        <input aria-label="last name" name="lName" placeholder="Last Name*" type="text" tabIndex="2" required/>
+        <input aria-label="first name" name="firstName" placeholder="First Name*" type="text" tabIndex="1" required/>
+        <input aria-label="last name" name="lastName" placeholder="Last Name*" type="text" tabIndex="2" required/>
         <input aria-label="size of group" name="groupSize" placeholder="How many people are in your group?*"
                type="number" tabIndex="3" min={1} required/>
         <input aria-label="email" name="email" placeholder="Email Address*" type="email" tabIndex="4"
@@ -18,9 +18,9 @@ export function ContactForm(props) {
                tabIndex="6" required/>
         <select className={`select-grid`} aria-label={`location dropdown`} name={`location`} required tabIndex={7}>
           <option defaultValue>Where would you like to go?</option>
-          <option value={`nyc`}>New York City</option>
-          <option value={`bos`}>Boston</option>
-          <option value={`wdc`}>D.C.</option>
+          <option value={`New York City`}>New York City</option>
+          <option value={`Boston`}>Boston</option>
+          <option value={`Washington, D.C.`}>D.C.</option>
         </select>
         <textarea aria-label="write your message" name="message"
                   placeholder="Please leave any details you think I need to know"

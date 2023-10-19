@@ -1,5 +1,7 @@
 import PrimaryButton from "./button";
 import {ContactForm} from "./form";
+import classes from './aboutSection.module.css'
+
 
 export default function AboutSection(props) {
   return (
@@ -7,9 +9,12 @@ export default function AboutSection(props) {
       <div className={`header-section mb-1`}>
         <h2>{props.aboutTitle}</h2>
       </div>
-      <div className={`header-section mb-1`}>
-        <h2>Daniel Ellis</h2>
-        <h3>Founder and President</h3>
+      <div className={`header-section mb-1 ${classes.detailContainer}`}>
+        <img className={classes.image} src={'/assets/images/about-sm.webp'} alt={`daniel`} />
+        <div className={classes.details}>
+          <h2>Daniel Ellis</h2>
+          <h3>Founder and President</h3>
+        </div>
       </div>
       <p>When I visited New York City with my senior class in high school back in the 80s, I fell in love with the city
         and knew it would be my next home. I originally moved to NYC to pursue an acting career, and with some moderate

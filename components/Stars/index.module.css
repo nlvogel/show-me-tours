@@ -1,0 +1,13 @@
+.starContainer {
+    display: flex;
+    margin-top: 0.875rem;
+}
+
+.starContainer svg {
+    color: darkgoldenrod;
+    max-width: 25px;
+}
+
+.starContainer path {
+    filter: drop-shadow(1px 1px 1px var(--brandFontColorRev));
+}

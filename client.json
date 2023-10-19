@@ -2,8 +2,10 @@
   "client": {
     "name": "Show Me Tours",
     "email": "daniel@showmetours.biz",
-    "phone": "+11234567890",
-    "phoneFmt": "(123) 456-7890",
+    "phone": "+19175016310",
+    "phoneFmt": "(917) 501-6310",
+    "phone2": "+16463097175",
+    "phoneFmt2": "(646) 309-7175",
     "address": {
       "lineOne": "1234 An Address Lane",
       "lineTwo": "",
@@ -39,20 +41,29 @@
   ],
   "reviews": [
     {
-      "name": "John S.",
-      "review": "Lorbn vghh vcbem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices."
+      "name": "Jessica C.",
+      "review": "Show Me Tours did an incredible job at organizing the trip and helping us tour the site. Daniel was full of knowledge about the history of the mansion, the grounds, and the education center.",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g60763-d2494116-r920596522-Show_Me_Tours-New_York_City_New_York.html"
     },
     {
-      "name": "Jill F.",
-      "review": "Bibendum est ultricies integer quis auctor elit. Sagittis purus sit amet volutpat consequat mauris nunc."
+      "name": "Ashlyn M. - Perry, FL",
+      "review": "We could not have fit so much into this trip if it weren’t for Daniel Ellis with Show Me Tours planning our entire trip start to finish! He booked our accommodations, purchased all of our tickets, and gave us a step by step itinerary (literally like 10+ pages).",
+      "url": ""
     },
     {
-      "name": "Jack B.",
-      "review": "Vel turpis nunc eget lorem dolor sed viverra. Accumsan tortor posuere ac ut consequat. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit."
+      "name": "Jamie W. - Tulsa, OK",
+      "review": "Daniel loves NYC and wants his clients to love the City too.  He goes above and beyond to make your trip special whether it’s a large group or just two of you!",
+      "url": ""
     },
     {
-      "name": "Kelly R.",
-      "review": "Vel turpis nunc eget lorem dolor sed viverra. Accumsan tortor posuere ac ut consequat. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit."
+      "name": "Diane M. - Greenville, NC.",
+      "review": "The size and scope of NYC requires a professional tour guide.   Daniel is the ultimate professional!",
+      "url": ""
+    },
+    {
+      "name": "Mechelle C. - Sacramento, CA.",
+      "review": "Show Me Tours offers exceptional service and an extraordinary experience. I can’t wait to travel to NYC again with Show Me Tours and Daniel Ellis!",
+      "url": ""
     }
   ]
 }

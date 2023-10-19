@@ -70,9 +70,7 @@ export default async function Page() {
           accommodation, attraction tickets, and dinner reservations at the best restaurants. Tell us what you want and
           we’ll make it happen!</p>
       </TextField>
-      <Reviews
-
-      />
+      <Reviews />
       <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`contact`} additionalClass={`rounded`}>PLAN
         A TRIP</PrimaryButton></div>
       <Suspense fallback={<Loading />}>
@@ -80,9 +78,7 @@ export default async function Page() {
       </Suspense>
       <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`contact`} additionalClass={`rounded`}>PLAN
         A TRIP</PrimaryButton></div>
-      <Plan
-
-      />
+      {/*<Plan />*/}
       <ContactForm formTitle={`Book a Tour`}/>
     </div>
   )

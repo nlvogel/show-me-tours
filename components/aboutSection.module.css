@@ -1,0 +1,26 @@
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0.875rem 1rem 0.875rem 0;
+}
+
+.detailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 651px) {
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .detailContainer {
+        justify-content: flex-start;
+    }
+}
+
+

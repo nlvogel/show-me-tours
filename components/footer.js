@@ -21,10 +21,11 @@ export function FooterOne() {
                 </Link>
             </div>
             <div className={`footer-contact`}>
-                <Address />
+                {/*<Address />*/}
                 <div>
                     <a className={`block`} href={`mailto:${info.client.email}`}>{info.client.email}</a>
                     <a className={`block`} href={`tel:${info.client.phone}`}>{info.client.phoneFmt}</a>
+                  <a className={`block`} href={`tel:${info.client.phone2}`}>{info.client.phoneFmt2}</a>
                 </div>
             </div>
         </div>
