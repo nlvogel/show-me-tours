@@ -25,9 +25,13 @@ export default function AboutSection(props) {
         tour guide license, I started out on red Double Decker buses and then moved up to walking tours with various
         companies. Show Me Tours was created in 2001 when I realized I had a passion for creating better itineraries for
         those visiting the city as well as provide better, personalized service.</p>
-      <div className={`header-section mb-1`}>
-        <h2>Gina Ellis</h2>
-        <h3>Co-owner and Office Manager</h3>
+
+      <div className={`header-section mb-1 ${classes.detailContainer}`}>
+        <img className={classes.image} src={'/assets/images/gina-about-sm.webp'} alt={`gina`} />
+        <div className={classes.details}>
+          <h2>Gina Ellis</h2>
+          <h3>Co-owner and Office Manager</h3>
+        </div>
       </div>
       <p>While I was landing for the first time in New York City on November 1st, 2005, the Statue of Liberty was right
         outside my window. As I gazed on this important symbol of freedom, I said to myself “I’m going to stay in this
