@@ -1,5 +1,5 @@
 .starContainer {
-    display: flex;
+    /*display: flex;*/
     margin-top: 0.875rem;
 }
 
@@ -10,4 +10,6 @@
 
 .starContainer path {
     filter: drop-shadow(1px 1px 1px var(--brandFontColorRev));
+    -ms-filter: drop-shadow(1px 1px 1px var(--brandFontColorRev));
+    -webkit-filter: drop-shadow(1px 1px 1px var(--brandFontColorRev));
 }
