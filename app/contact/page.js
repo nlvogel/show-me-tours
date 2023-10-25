@@ -20,7 +20,7 @@ export const metadata = {
     description: meta.description,
     url: meta.url,
     siteName: 'Show Me Tours',
-    images: '../../public/assets/images/book-a-trip.jpeg',
+    images: '/assets/images/book-a-trip.jpeg',
     locale: 'en_US',
     type: 'website',
   },
