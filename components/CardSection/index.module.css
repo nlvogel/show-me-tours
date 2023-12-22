@@ -1,0 +1,58 @@
+.fluidContainer {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.cards2, .cards3, .cards4 {
+    width: 100%;
+    margin-bottom: 1.1rem;
+}
+
+
+@media screen and (min-width: 678px) {
+
+    .cards2 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .cards3 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .cards4 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .cards3 {
+        width: 33.33333%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards4 {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,60 @@
+@use '../../app/css/queries.scss' as *;
+
+.btnContainer {
+  display: block;
+  text-align: center;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.btnContainer .btn {
+  margin: 0.375rem 1rem;
+}
+
+.singleBtn {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.btn {
+  border-radius: 10rem;
+  padding: 0.75rem 2rem;
+  margin: 0.75rem 0;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+  width: auto;
+}
+
+.btnPrimary {
+  background-color: var(--primary-translucent);
+  transition: background-color 1000ms, box-shadow 1000ms;
+  box-shadow: 0 0 3px var(--primary-translucent);
+}
+
+.btnPrimary:hover {
+  background-color: var(--primary-brand-color);
+  transition: background-color 500ms, box-shadow 500ms;
+  box-shadow: unset;
+}
+
+.btnSecondary {
+  background-color: var(--secondary-translucent);
+  transition: background-color 1000ms, box-shadow 1000ms;
+  box-shadow: 0 0 3px var(--secondary-translucent);
+}
+
+.btnSecondary:hover {
+  background-color: var(--secondary-brand-color);
+  transition: background-color 500ms, box-shadow 500ms;
+  box-shadow: unset;
+}
+
+@include small-break {
+  .btnContainer {
+    display: flex;
+  }
+}

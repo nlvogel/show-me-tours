@@ -5,6 +5,7 @@ import {ContactForm} from "components/form";
 import Address from "components/address";
 import {Reviews} from "../../components/reviews";
 import classes from './contact.module.css'
+import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 const meta = {
   title: 'Contact Show Me Tours',
@@ -35,15 +36,19 @@ export const metadata = {
       noimageindex: false,
     }
   },
-  verification: {
-    google: info.client.verificationCode,
-  },
   metadataBase: new URL(meta.url)
 }
 
 export default function ContactPage() {
+
+  const schema = [
+    addLogo, addLocalBusiness
+  ]
+
   return (
     <>
+      <script type={`application/ld+json`}
+            dangerouslySetInnerHTML={{__html: JSON.stringify(schema.map(s => s))}}/>
       <div>
         <HeroSectionOne
           firstHeader={`Book a Tour with ${info.client.name}`}

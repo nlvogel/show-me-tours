@@ -4,6 +4,7 @@ import bg from "../../public/assets/images/about.jpg";
 import {TextField} from "components/explanation"
 import Image from "next/image";
 import AboutSection from "components/aboutSection";
+import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 const meta = {
   title: 'About Show Me Tours',
@@ -34,15 +35,19 @@ export const metadata = {
       noimageindex: false,
     }
   },
-  verification: {
-    google: info.client.verificationCode,
-  },
   metadataBase: new URL(meta.url)
 }
 
 export default function AboutPage() {
+
+  const schema = [
+    addLogo, addLocalBusiness
+  ]
+
   return (
     <div>
+      <script type={`application/ld+json`}
+            dangerouslySetInnerHTML={{__html: JSON.stringify(schema.map(s => s))}}/>
       <HeroSectionOne
         firstHeader={`About ${info.client.name}`}
         heroContent="Show Me Tours is a small family business, whose mission is providing excellent service in personalizing trips to New York City, Boston and/or Washington DC for your family or group. Whether you are a big school theater group that wants to learn all about Broadway in New York City, or you are a family that wants to delve deep into the history of Washington DC, we will customize everything according to your interests and needs with a personal touch that will make you feel like family."

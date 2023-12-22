@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/third-parties": "^14.0.4",
     "@prisma/client": "^5.0.0",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.3.2",
@@ -24,10 +25,12 @@
     "moment": "^2.29.4",
     "n": "^9.1.0",
     "next": "^13.4.10",
+    "prop-types": "^15.8.1",
     "qs": "^6.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.4",
+    "sass": "^1.69.5",
     "slate": "^0.94.1",
     "stable": "^0.1.8"
   },

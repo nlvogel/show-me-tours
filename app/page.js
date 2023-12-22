@@ -10,6 +10,7 @@ import RenderCarousel from "../components/Carousel";
 import {Suspense} from "react";
 import Loading from "./loading";
 import {images} from '../utils/getImages'
+import {addLocalBusiness, addLogo} from "../components/Schema";
 
 const meta = {
   title: 'Custom Tours of New York City, Washington D.C., and Boston',
@@ -40,15 +41,19 @@ export const metadata = {
       noimageindex: false,
     }
   },
-  verification: {
-    google: info.client.verificationCode,
-  },
   metadataBase: new URL(meta.url)
 }
 
 export default async function Page() {
+
+  const schema = [
+    addLogo, addLocalBusiness
+  ]
+
   return (
     <div>
+      <script type={`application/ld+json`}
+            dangerouslySetInnerHTML={{__html: JSON.stringify(schema.map(s => s))}}/>
       <HeroSectionOne
         firstHeader="Custom Tours of New York City, Washington D.C., and Boston"
         secondHeader="Showing you the city the way you want to see it"

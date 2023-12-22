@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://showmetours.biz/sitemap.xml

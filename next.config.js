@@ -7,6 +7,16 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'images.showmetours.biz',
+        port: "",
+      },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        port: '',
+      },
+      {
+        protocol: 'https',
         hostname: "pub-178d5782ea9d451f8d4fcdff109708f2.r2.dev",
         port: "",
       },
@@ -20,6 +30,7 @@ module.exports = {
         hostname: 'payload-cms-production-6f3d.up.railway.app',
         port: '',
       }
-    ]
+    ],
+    unoptimized: true,
   },
 }

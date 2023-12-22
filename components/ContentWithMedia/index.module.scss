@@ -1,0 +1,186 @@
+@use '../../app/css/queries.scss' as *;
+@use '../../app/css/vars.scss' as *;
+
+.container {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.875rem;
+  justify-content: center;
+}
+
+.imgContainer {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
+.imgContained {
+  justify-content: center;
+}
+
+.ratio {
+    position: relative;
+    width: 100%;
+}
+
+.ratio16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+.ratio1x1 {
+    aspect-ratio: 1 / 1;
+}
+
+.ratio>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  @include solid-shadow-right;
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.1rem;
+}
+
+.reverseRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.875rem;
+  align-items: center;
+}
+
+@include small-break {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1.2rem auto;
+  }
+
+  .imgContainer {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .imgContained {
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+  }
+
+  .row .imgContainer {
+    padding-right: 2rem;
+  }
+
+  .reverseRow .image {
+    @include solid-shadow-left;
+  }
+
+  .reverseRow .imgContainer {
+    padding-left: 2rem;
+    position: sticky;
+    top: 10px;
+  }
+
+  .image {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .text, .richText {
+    flex: 0 0 auto;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .cta {
+    grid-area: cta;
+    margin: auto;
+  }
+
+  .header {
+    grid-area: header;
+    margin-bottom: 0;
+  }
+}
+
+@include med-small-break {
+
+  .reverseRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.875rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    width: 33%;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+
+}
+
+@include mid-break {
+  .imgContainer {
+    width: 33%;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+
+}
+
+@include large-break {
+  //.container {
+  //  max-width: 1440px;
+  //}
+
+  .imgContainer {
+    width: 33%;
+    padding-right: 2rem;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+
+}

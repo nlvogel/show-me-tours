@@ -1,0 +1,56 @@
+@use '../../../../../css/queries.scss' as *;
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  a {
+    padding: 0.5rem 0;
+    color: var(--white);
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 500ms;
+    background-color: var(--secondary-translucent);
+  }
+
+  a:nth-child(2) {
+    border-left: 2px solid var(--white)!important;
+  }
+}
+
+.nav a:hover {
+  background-color: var(--secondary-brand-color);
+  transition: background-color 500ms;
+}
+
+.prev {
+  border: 0 !important;
+  margin: 0;
+}
+
+.next {
+  border: 0 !important;
+  margin: 0;
+}
+
+@include med-small-break {
+
+  .prev {
+    border-radius: 0 0 10px 10px !important;
+  }
+
+  .next {
+    border-radius: 0 0 10px 10px !important;
+  }
+
+  .nav {
+    a:first-child {
+      border-radius: unset!important;
+    }
+
+    a:last-child {
+      border-radius: unset!important;
+    }
+  }
+}

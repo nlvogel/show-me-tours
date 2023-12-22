@@ -32,7 +32,7 @@ export function FooterOne() {
         <div className={`footer-bottom`}>
             <div className={`footer-info`}>{info.client.name} © {new Date().getFullYear()}</div>
             {/*<div className={`footer-social`}>Social links</div>*/}
-            <div className={`footer-designed-by`}>Designed and maintained by <a href={`#`}>Midlo Web Design</a></div>
+            <div className={`footer-designed-by`}>Designed and maintained by <a href={`https://midlowebdesign.com`} aria-label={`A link to Show Me Tours' web developer's website: Midlo Web Design.`} title={`Web Developer in Midlothian, VA`}>Midlo Web Design</a></div>
         </div>
     </footer>
 }

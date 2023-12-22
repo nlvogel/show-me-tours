@@ -4,12 +4,14 @@
 
 :root {
     --brandColor: #C61A23;
+    --brandTranslucent: #C61A23cd;
     --secondaryColor: navy;
+    --secondaryTransparent: rgba(0, 0, 128, 0.35);
     --brandHover: #94131a;
     --brandFontColor: white;
     --offWhite: #ababab;
     --brandFontColorRev: #42070A;
-    --brandFont: 'Inter';
+    --brandFont: "Myriad Std Tilt", "Inter", sans-serif;;
     --maxWidth: 1440px;
     --white: #efefef;
 
@@ -32,7 +34,11 @@
 }
 
 h1, h2, h3, h4, h5, h6, .navbar a {
-    font-family: "Myriad Std Tilt", "Inter", sans-serif;
+    font-family: var(--brandFont);
+}
+
+p {
+    font-family: 'Inter', sans-serif;
 }
 
 p, h3 {
@@ -114,6 +120,7 @@ body {
     align-items: center;
     position: relative;
     box-shadow: 0 1px 5px lightgray;
+    z-index: 1000;
 }
 
 .brand {
@@ -220,6 +227,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.ms-1 {
+    margin-left: 1rem;
+}
+
 .mb-2 {
     margin-bottom: 1.5rem;
 }
@@ -272,7 +283,7 @@ body {
 }
 
 .secondary-button button {
-    color: var(--brandFontColorRev);
+    color: var(--brandFontColor);
 }
 
 /* Plan */
@@ -398,6 +409,7 @@ body {
 
 .review-section {
     padding: 0.5rem 2rem;
+    font-size: 1.2rem;
 }
 
 .review-section h2 {

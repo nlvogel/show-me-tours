@@ -1,9 +1,13 @@
 'use client'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from "next/image";
+import classes from './index.module.scss'
+import {Individual, Multiple} from "../Schema/Container";
+import {addImage} from "../Schema";
 
 
-export default function RenderCarousel({images}) {
+export default function RenderCarousel({images, includeHeader = true, mainImages = true}) {
 
 
     const responsive = {
@@ -26,9 +30,9 @@ export default function RenderCarousel({images}) {
     }
     return (
         <section className={`reviews max-width`}>
-            <div className={`header-section`}>
-                <h2>RECENT PHOTOS</h2>
-            </div>
+          {includeHeader && <div className={`header-section`}>
+            <h2>RECENT PHOTOS</h2>
+          </div>}
             <Carousel
                 responsive={responsive}
                 ssr={true}
@@ -36,11 +40,19 @@ export default function RenderCarousel({images}) {
                 containerClass={`carousel-container`}
                 itemClass={`px-1 carousel-image`}
                 sliderClass={`align-center`}
-                centerMode={true}
+                slidesToSlide={1}
             >
-              {images.filter(image => image !== '.DS_Store').map((image, i) => (
-                <img src={`/assets/images/carouselImages/${image}`} alt={`A photo of a Show Me Tours tour`} key={i} />
-              ))}
+              {mainImages ? images.filter(image => image !== '.DS_Store').map((image, i) => (
+                <div key={i}>
+                  <Individual schema={addImage({image: `/assets/images/carouselImages/${image}`})} />
+                  <img src={`/assets/images/carouselImages/${image}`} alt={`A photo of a Show Me Tours tour`}/>
+                </div>
+              )) : images.map((image, i) => <div key={i}>
+                <Individual schema={addImage({image: image.src})} />
+                <Image className={classes.otherImages} src={image.src}
+                                                      alt={image.altDescription} height={image.height}
+                                                      width={image.width}/>
+              </div>) }
             </Carousel>
         </section>
     )

@@ -15,10 +15,10 @@ export const nav = {
     //     "text": "Pricing",
     //     "slug": "/pricing"
     // },
-    // "reviews": {
-    //     "text": "Reviews",
-    //     "slug": "/reviews"
-    // },
+    "reviews": {
+        "text": "Reviews",
+        "slug": "/reviews"
+    },
     // "projects": {
     //     "text": "Projects",
     //     "slug": "/projects"
