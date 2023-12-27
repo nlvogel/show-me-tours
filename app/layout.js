@@ -4,7 +4,7 @@ import NavItemsToLeft, {NavItemsToRight} from "../components/nav";
 import {FooterOne, FooterTwo} from "../components/footer";
 import styles from './globals.css'
 import {GoogleTagManager} from '@next/third-parties/google'
-import client from '../client.json'
+import {client} from './client.js'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
