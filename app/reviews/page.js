@@ -19,7 +19,7 @@ export const reviews = [
     name: `From visiting famous landmarks to enjoying local cuisine, the trip was a perfect blend of learning and fun.`,
     cta: `Read more...`,
     label: `Read more about the review from Gail`,
-    author: [{name: `Gail`}]
+    author: [{name: `Gail B. - 5th Grade Teacher - Monte Cassino School - Tulsa, OK `}]
   },
   {slug: `/ashlyn`,
     image: {
@@ -31,7 +31,7 @@ export const reviews = [
     name: `We could not have fit so much into this trip if it weren’t for Daniel Ellis with Show Me Tours planning our entire trip start to finish!`,
     cta: `Read more...`,
     label: `Read more about the review from Ashlyn`,
-    author: [{name: `Ashlyn`}]
+    author: [{name: `Ashlyn M. - Perry, FL`}]
   },
   {
     slug: `/diane`,
@@ -45,7 +45,7 @@ export const reviews = [
     cta: `Read more...`,
     label: `Read more about the review from Diane`,
     author: [{
-      name: `Diane`
+      name: `Diane M. - Greenville, NC.`
     }]
   },
   {
@@ -60,7 +60,7 @@ export const reviews = [
     cta: `Read more...`,
     label: `Read more about the review from Jamie`,
     author: [{
-      name: `Jamie`
+      name: `Jamie - Tulsa, OK`
     }]
   },
   {
@@ -75,7 +75,7 @@ export const reviews = [
     cta: `Read more...`,
     label: `Read more about the review from Jessica`,
     author: [{
-      name: `Jessica`
+      name: `Jessica C. - Richmond, VA`
     }]
   },
   {
@@ -90,7 +90,7 @@ export const reviews = [
     cta: `Read more...`,
     label: `Read more about the review from Mechelle`,
     author: [{
-      name: `Mechelle`
+      name: `Mechelle C. - Sacramento, CA`
     }]
   },
 ]

@@ -7,18 +7,20 @@ import {GoogleTagManager} from '@next/third-parties/google'
 import {client} from './client.js'
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
-  children,
-}) {
+                                     children,
+                                   }) {
   return (
     <html lang="en">
-      <body>
-      <NavItemsToRight/>
-      {children}
-      <FooterOne/>
-      <GoogleTagManager gtmId={client.trackingCode} />
-      </body>
+    <head>
+      <link rel="icon" href={`/favicon.ico`}
+            sizes="any"/>
+    </head>
+    <body>
+    <NavItemsToRight/>
+    {children}
+    <FooterOne/>
+    <GoogleTagManager gtmId={client.trackingCode}/>
+    </body>
     </html>
   )
 }
