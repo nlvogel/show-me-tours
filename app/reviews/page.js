@@ -1,6 +1,6 @@
 import info from '../../client.json'
 import bg from "../../public/assets/images/reviews-hero.webp";
-import {HeroSectionOne} from "components/heroSections";
+import {HeroSectionOne} from "../../components/heroSections";
 import classes from './index.module.scss'
 import ContentWithMedia from "../../components/ContentWithMedia";
 import {meta} from "../../components/Metadata";
@@ -91,6 +91,21 @@ export const reviews = [
     label: `Read more about the review from Mechelle`,
     author: [{
       name: `Mechelle C. - Sacramento, CA`
+    }]
+  },
+  {
+    slug: `/danyelle`,
+    image: {
+      src: `https://images.showmetours.biz/danyelle-3.webp`,
+      width: 640,
+      height: 360,
+      altDescription: `A group of smiling people on tour in NYC`
+    },
+    name: `Show Me Tours set us up for such an amazing experience of The Big Apple!`,
+    cta: `Read more...`,
+    label: `Read more about the review from Danyelle`,
+    author: [{
+      name: `Danyelle J. - Florida`
     }]
   },
 ]
