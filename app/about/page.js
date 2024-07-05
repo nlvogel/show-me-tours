@@ -1,9 +1,9 @@
 import info from '../../client.json'
-import {HeroSectionOne} from "components/heroSections";
+import {HeroSectionOne} from "../../components/heroSections";
 import bg from "../../public/assets/images/about.jpg";
-import {TextField} from "components/explanation"
+import {TextField} from "../../components/explanation"
 import Image from "next/image";
-import AboutSection from "components/aboutSection";
+import AboutSection from "../../components/aboutSection";
 import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 const meta = {

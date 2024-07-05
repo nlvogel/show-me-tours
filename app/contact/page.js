@@ -1,8 +1,8 @@
 import info from '../../client.json'
-import {HeroSectionOne} from "components/heroSections";
+import {HeroSectionOne} from "../../components/heroSections";
 import bg from "../../public/assets/images/book-a-trip.jpeg";
-import {ContactForm} from "components/form";
-import Address from "components/address";
+import {ContactForm} from "../../components/form";
+import Address from "../../components/address";
 import {Reviews} from "../../components/reviews";
 import classes from './contact.module.css'
 import {addLocalBusiness, addLogo} from "../../components/Schema";
