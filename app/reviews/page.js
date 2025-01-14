@@ -9,6 +9,18 @@ import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 
 export const reviews = [
+  {slug: `/katie`,
+    image: {
+      src: `https://images.showmetours.biz/IMG_3297.webp`,
+      width: 640,
+      height: 360,
+      altDescription: `A smiling family on a tour in NYC.`
+    },
+    name: `From visiting famous landmarks to enjoying local cuisine, the trip was a perfect blend of learning and fun.`,
+    cta: `Read more...`,
+    label: `Read more about the review from Gail`,
+    author: [{name: `Gail B. - 5th Grade Teacher - Monte Cassino School - Tulsa, OK `}]
+  },
   {slug: `/gail`,
     image: {
       src: `https://images.showmetours.biz/gail_1.webp`,
