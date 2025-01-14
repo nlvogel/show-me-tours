@@ -16,10 +16,10 @@ export const reviews = [
       height: 360,
       altDescription: `A smiling family on a tour in NYC.`
     },
-    name: `From visiting famous landmarks to enjoying local cuisine, the trip was a perfect blend of learning and fun.`,
+    name: `We recently returned from a wonderful Christmas trip to NYC!`,
     cta: `Read more...`,
-    label: `Read more about the review from Gail`,
-    author: [{name: `Gail B. - 5th Grade Teacher - Monte Cassino School - Tulsa, OK `}]
+    label: `Read more about the review from Katie`,
+    author: [{name: `Katie F. - Florida`}]
   },
   {slug: `/gail`,
     image: {
