@@ -9,7 +9,21 @@ import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 
 export const reviews = [
-  {slug: `/katie`,
+  {
+    slug: `/diana`,
+    image: {
+      src: `https://images.showmetours.biz/diana-1.webp`,
+      width: 640,
+      height: 360,
+      altDescription: `A group of students on a tour in New York City.`
+    },
+    name: `My students gushed about the trip so much that other people in our school wanted to travel with them.`,
+    cta: `Read more...`,
+    label: `Read more about the review from Diana`,
+    author: [{name: `Diana D. - NCHS Fine Arts Dept Chair`}]
+  },
+  {
+    slug: `/katie`,
     image: {
       src: `https://images.showmetours.biz/IMG_3297.webp`,
       width: 640,

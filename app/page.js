@@ -76,12 +76,12 @@ export default async function Page() {
           we’ll make it happen!</p>
       </TextField>
       <Reviews />
-      <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`contact`} additionalClass={`rounded`}>PLAN
+      <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`/contact`} additionalClass={`rounded`}>PLAN
         A TRIP</PrimaryButton></div>
       <Suspense fallback={<Loading />}>
         <RenderCarousel images={images}/>
       </Suspense>
-      <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`contact`} additionalClass={`rounded`}>PLAN
+      <div className={`flex mb-2 justify-content-center`}><PrimaryButton href={`/contact`} additionalClass={`rounded`}>PLAN
         A TRIP</PrimaryButton></div>
       {/*<Plan />*/}
       <ContactForm formTitle={`Book a Tour`}/>

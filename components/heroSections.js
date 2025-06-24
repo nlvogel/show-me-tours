@@ -17,8 +17,8 @@ export function HeroSectionOne(props) {
                     <p className={`${styles.heroContent} ${props.textAlign === 'center' ? `text-center` : props.textAlign === 'left' ? `text-left` : `text-center`}`}>{props.heroContent}</p>
                     {props.includeButtons &&
                     <div className={`flex ${props.buttonLayout} mb-2`}>
-                        {props.includePrimaryButton && <PrimaryButton href={props.href} additionalClass={props.roundedButtons ? 'rounded' : ''}>PLAN A TRIP</PrimaryButton>}
-                        {/*{props.includeSecondaryButton && <SecondaryButton href="#" additionalClass={props.roundedButtons ? 'rounded' : ''}>Button 2</SecondaryButton>}*/}
+                        {props.includePrimaryButton && <PrimaryButton href={props.href} additionalClass={props.roundedButtons ? 'rounded' : ''}>{props.primaryCTA ? props.primaryCTA : `PLAN A TRIP`}</PrimaryButton>}
+                        {props.includeSecondaryButton && <SecondaryButton href2={props.href2} additionalClass={props.roundedButtons ? 'rounded' : ''}>{props.secondaryCTA ? props.secondaryCTA : `CONTACT`}</SecondaryButton>}
                     </div>
                     }
                 </div>

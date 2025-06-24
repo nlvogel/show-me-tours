@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Globals */
 
+.access-account-link {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        padding: 1rem;
+    }
+}
 
 :root {
     --brandColor: #C61A23;
@@ -39,6 +46,7 @@ h1, h2, h3, h4, h5, h6, .navbar a {
 
 p {
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
 p, h3 {
@@ -221,6 +229,13 @@ body {
 
 .space-evenly {
     justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.small-width {
+    max-width: 900px;
+    padding: 0 1rem;
+    margin: auto;
 }
 
 .mb-1 {
@@ -792,7 +807,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 669px) {
+@media screen and (min-width: 730px) {
 
     /* nav */
     .navbar {

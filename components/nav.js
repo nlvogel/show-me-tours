@@ -18,7 +18,7 @@ export default function NavItemsToLeft() {
         setIsOpen(false);
         window.onresize = function () {
             const w = window.outerWidth;
-        if (w > 668) {
+        if (w > 729) {
             setIsOpen(false);
         }}// Close the navigation panel
     }, [currentRoute]);
@@ -55,17 +55,22 @@ export function NavItemsToRight() {
         }}// Close the navigation panel
     }, [currentRoute]);
 
-    return <nav className="navbar space-between">
+    return <nav>
+      <div className={'access-account-link'}>
+        <a href={'https://showmetours.campmanagement.com/events'}>Access your account</a>
+      </div>
+      <div className="navbar space-between">
         <Link href="/" className="brand">
           <div className="logo"></div>
         </Link>
         <div className={isOpen ? `nav-clicked` : `nav-menu`} onClick={clickHandler}></div>
         <div className={`nav-items ${isOpen ? 'nav-active' : 'nav-hidden'}`}>
-            {
-                Object.keys(nav)
-                    .map(key =>
-                        <Link className={`nav-item`} key={key} href={nav[key].slug}>{nav[key].text}</Link>)
-            }
+          {
+            Object.keys(nav)
+              .map(key =>
+                <Link className={`nav-item`} key={key} href={nav[key].slug}>{nav[key].text}</Link>)
+          }
         </div>
+      </div>
     </nav>
 }

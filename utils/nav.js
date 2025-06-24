@@ -1,11 +1,11 @@
 export const nav = {
-    // "blog": {
-    //     "text": "Blog",
-    //     "slug": "/blog"
-    // },
   "home": {
     "text": 'Home',
     "slug": '/',
+  },
+  "rva2nyc": {
+    "text": "RVA2NYC",
+    "slug": "/rva2nyc"
   },
   "about": {
         "text": "About",
