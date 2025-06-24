@@ -3,10 +3,12 @@ import {HeroSectionOne} from "../../components/heroSections";
 import bg1 from "/public/assets/images/Picture3.webp"
 import bg2 from "/public/assets/images/Picture2.webp"
 import bg3 from "/public/assets/images/Picture1.webp"
+import logo from "/public/assets/images/RVA2NYC-logo-FINAL.webp"
 import {TextField} from "../../components/explanation";
 import PrimaryButton, {SecondaryButton} from "../../components/button";
 import {addLocalBusiness, addLogo} from "../../components/Schema";
 import ContentWithMedia from "../../components/ContentWithMedia";
+import Image from "next/image";
 
 const meta = {
   title: 'Weekend getaways in New York City from Richmond, VA',
@@ -67,7 +69,9 @@ export default async function Page() {
         href={'https://showmetours.campmanagement.com/group-register'}
         href2={'https://showmetours.campmanagement.com/individual-register'}
       />
-      <div>
+      <div className={'px-1'}>
+        <div style={{display: "flex", justifyContent: 'center'}}><Image src={logo.src} alt={''} width={250} height={250} layout={'responsive'}
+                  style={{margin: '2rem auto 0', maxWidth: '50%'}}/></div>
         <TextField textFieldTitle={``}>
           <ContentWithMedia header={''} featuredImage={bg3} textPosition={'Right'} aspectRatio={'landscape'}
                             content={<p>Have you ever wanted to just forget everything for a couple of days and spend an
