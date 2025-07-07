@@ -18,7 +18,7 @@
     --brandFontColor: white;
     --offWhite: #ababab;
     --brandFontColorRev: #42070A;
-    --brandFont: "Myriad Std Tilt", "Inter", sans-serif;;
+    --brandFont: "Myriad Std Tilt", "Inter", sans-serif;
     --maxWidth: 1440px;
     --white: #efefef;
 
@@ -294,7 +294,11 @@ body {
 }
 
 .secondary-button {
-    background-color: var(--secondaryColor);
+    background-color: var(--brandColor);
+}
+
+.secondary-button:hover {
+    background-color: var(--brandHover);
 }
 
 .secondary-button button {
@@ -559,6 +563,32 @@ footer {
     min-height: 75px;
     min-width: 75px;
     text-align: center;
+}
+
+.footer-logo-text {
+    font-family: var(--brandFont);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-o {
+    color: var(--brandColor);
+}
+
+.footer-logo-svg {
+    max-height: 75px;
+    width: auto;
+}
+
+.footer-logo-img {
+    max-height: 75px;
+    width: auto;
 }
 
 .footer-logo-container {

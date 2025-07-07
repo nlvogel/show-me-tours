@@ -17,7 +17,7 @@ export function FooterOne() {
             </div>
             <div className={`footer-logo-container`}>
                 <Link href="/">
-                    <div className={`footer-logo`}/>
+                    <img src="/assets/images/logo-w-red.png" alt="Show Me Tours" className={`footer-logo-img`}/>
                 </Link>
             </div>
             <div className={`footer-contact`}>

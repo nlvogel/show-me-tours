@@ -1,6 +1,6 @@
 import info from '../../client.json'
 import {HeroSectionOne} from "../../components/heroSections";
-import bg1 from "/public/assets/images/Picture3.webp"
+import bg1 from "/public/assets/images/times-square.webp"
 import bg2 from "/public/assets/images/Picture2.webp"
 import bg3 from "/public/assets/images/Picture1.webp"
 import logo from "/public/assets/images/RVA2NYC-logo-FINAL.webp"
@@ -68,10 +68,21 @@ export default async function Page() {
         secondaryCTA={'Register as an Individual Now'}
         href={'https://showmetours.campmanagement.com/group-register'}
         href2={'https://showmetours.campmanagement.com/individual-register'}
+        includeAccountLink={true}
+        accountLinkHref={'https://showmetours.campmanagement.com/events'}
       />
       <div className={'px-1'}>
         <div style={{display: "flex", justifyContent: 'center'}}><Image src={logo.src} alt={''} width={250} height={250} layout={'responsive'}
                   style={{margin: '2rem auto 0', maxWidth: '50%'}}/></div>
+        <TextField>
+          <h2>Available Dates</h2>
+          <ul style={{listStyle: 'disc', paddingLeft: '2rem'}}>
+            <li>October 3-5, 2025</li>
+            <li>November 14-16, 2025</li>
+            <li>December 5-7, 2025</li>
+            <li>December 19-21, 2025</li>
+          </ul>
+        </TextField>
         <TextField textFieldTitle={``}>
           <ContentWithMedia header={''} featuredImage={bg3} textPosition={'Right'} aspectRatio={'landscape'}
                             content={<p>Have you ever wanted to just forget everything for a couple of days and spend an
@@ -110,6 +121,11 @@ export default async function Page() {
             additionalClass={`rounded`}>
             Register as an Individual Now
           </SecondaryButton>
+        </div>
+        <div className={`text-center mb-2`}>
+          <a href={'https://showmetours.campmanagement.com/events'} target="_blank" rel="noopener noreferrer" style={{color: 'var(--brandColor)', textDecoration: 'underline'}}>
+            Access your account
+          </a>
         </div>
       </div>
     </div>
