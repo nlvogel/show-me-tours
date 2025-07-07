@@ -75,13 +75,50 @@ export default async function Page() {
         <div style={{display: "flex", justifyContent: 'center'}}><Image src={logo.src} alt={''} width={250} height={250} layout={'responsive'}
                   style={{margin: '2rem auto 0', maxWidth: '50%'}}/></div>
         <TextField>
-          <h2>Available Dates</h2>
-          <ul style={{listStyle: 'disc', paddingLeft: '2rem'}}>
-            <li>October 3-5, 2025</li>
-            <li>November 14-16, 2025</li>
-            <li>December 5-7, 2025</li>
-            <li>December 19-21, 2025</li>
-          </ul>
+          <h2 style={{textAlign: 'center', marginBottom: '2rem'}}>Available Dates</h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '1rem',
+            marginBottom: '2rem'
+          }}>
+            <div style={{
+              border: '1px solid #e0e0e0',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              textAlign: 'center',
+              backgroundColor: '#fafafa'
+            }}>
+              <h3 style={{margin: '0', color: 'var(--brandColor)'}}>October 3-5, 2025</h3>
+            </div>
+            <div style={{
+              border: '1px solid #e0e0e0',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              textAlign: 'center',
+              backgroundColor: '#fafafa'
+            }}>
+              <h3 style={{margin: '0', color: 'var(--brandColor)'}}>November 14-16, 2025</h3>
+            </div>
+            <div style={{
+              border: '1px solid #e0e0e0',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              textAlign: 'center',
+              backgroundColor: '#fafafa'
+            }}>
+              <h3 style={{margin: '0', color: 'var(--brandColor)'}}>December 5-7, 2025</h3>
+            </div>
+            <div style={{
+              border: '1px solid #e0e0e0',
+              borderRadius: '10px',
+              padding: '1.5rem',
+              textAlign: 'center',
+              backgroundColor: '#fafafa'
+            }}>
+              <h3 style={{margin: '0', color: 'var(--brandColor)'}}>December 19-21, 2025</h3>
+            </div>
+          </div>
         </TextField>
         <TextField textFieldTitle={``}>
           <ContentWithMedia header={''} featuredImage={bg3} textPosition={'Right'} aspectRatio={'landscape'}
