@@ -10,6 +10,19 @@ import {addLocalBusiness, addLogo} from "../../components/Schema";
 
 export const reviews = [
   {
+    slug: `/aultman-family`,
+    image: {
+      src: `https://images.showmetours.biz/the-aultman-family/aultman-0.webp`,
+      width: 640,
+      height: 360,
+      altDescription: `The Aultman Family on a tour in New York City.`
+    },
+    name: `For anyone planning a dream NYC getaway, pack your bags and GO—but make Daniel your first call.`,
+    cta: `Read more...`,
+    label: `Read more about the review from the Aultman Family`,
+    author: [{name: `The Aultman Family`}]
+  },
+  {
     slug: `/diana`,
     image: {
       src: `https://images.showmetours.biz/diana-1.webp`,
